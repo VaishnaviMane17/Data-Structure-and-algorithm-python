@@ -15,7 +15,7 @@ def GpSum(n):
         return 1
     
     smallList = GpSum(n-1)  # induction hypothesis
-    return 2 ** n + smallList
+    return 1/(2 ** n) + smallList
 
 n = int(input())
 result = GpSum(n)
